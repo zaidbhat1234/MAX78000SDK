@@ -1,0 +1,26 @@
+c:/MaximSDK/Examples/MAX78000/CNN/yolo_evkit_image/build/utils_faceid.o: \
+ src/utils_faceid.c include/utils_faceid.h \
+ ../../../../Libraries/PeriphDrivers/Include/MAX78000/uart.h \
+ ../../../../Libraries/CMSIS/Device/Maxim/MAX78000/Include/uart_regs.h \
+ c:\maximsdk\tools\gnutools\lib\gcc\arm-none-eabi\9.2.1\include\stdint.h \
+ c:\maximsdk\tools\gnutools\arm-none-eabi\include\stdint.h \
+ c:\maximsdk\tools\gnutools\arm-none-eabi\include\machine\_default_types.h \
+ c:\maximsdk\tools\gnutools\arm-none-eabi\include\sys\features.h \
+ c:\maximsdk\tools\gnutools\arm-none-eabi\include\_newlib_version.h \
+ c:\maximsdk\tools\gnutools\arm-none-eabi\include\sys\_intsup.h \
+ c:\maximsdk\tools\gnutools\arm-none-eabi\include\sys\_stdint.h \
+ ../../../../Libraries/PeriphDrivers/Include/MAX78000/mxc_sys.h \
+ ../../../../Libraries/PeriphDrivers/Include/MAX78000/mxc_device.h \
+ ../../../../Libraries/CMSIS/Device/Maxim/MAX78000/Include/max78000.h \
+ ../../../../Libraries/CMSIS/Include/core_cm4.h \
+ ../../../../Libraries/CMSIS/Include/core_cmInstr.h \
+ ../../../../Libraries/CMSIS/Include/core_cmFunc.h \
+ ../../../../Libraries/CMSIS/Include/core_cm4_simd.h \
+ ../../../../Libraries/CMSIS/Device/Maxim/MAX78000/Include/system_max78000.h \
+ ../../../../Libraries/PeriphDrivers/Include/MAX78000/mxc_errors.h \
+ ../../../../Libraries/PeriphDrivers/Include/MAX78000/mxc_pins.h \
+ ../../../../Libraries/PeriphDrivers/Include/MAX78000/gpio.h \
+ ../../../../Libraries/CMSIS/Device/Maxim/MAX78000/Include/gpio_regs.h \
+ ../../../../Libraries/CMSIS/Device/Maxim/MAX78000/Include/lpgcr_regs.h \
+ ../../../../Libraries/CMSIS/Device/Maxim/MAX78000/Include/gcr_regs.h \
+ include/sampledata.h include/cnn.h

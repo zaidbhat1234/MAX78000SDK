@@ -1,0 +1,33 @@
+c:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit-riscv/buildrv/heap.o: \
+ c:/MaximSDK/Libraries/CMSIS/Device/Maxim/MAX78000/Source/heap.c \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\stdint.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\machine\_default_types.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\features.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\_newlib_version.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\_intsup.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\_stdint.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\errno.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\errno.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\reent.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\_ansi.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\newlib.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\config.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\machine\ieeefp.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\lib\gcc\riscv-none-embed\8.3.0\include\stddef.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\_types.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\machine\_types.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\lock.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\unistd.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\unistd.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\cdefs.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\types.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\machine\endian.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\machine\_endian.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\select.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\_sigset.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\_timeval.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\timespec.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\_timespec.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\_pthreadtypes.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\sched.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\machine\types.h

@@ -1,0 +1,20 @@
+c:/MaximSDK/Examples/MAX78000/CNN/faceid_evkit-riscv/buildrv/pb.o: \
+ c:\maximsdk\libraries\boards\max78000\source\pb.c \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\lib\gcc\riscv-none-embed\8.3.0\include\stddef.h \
+ c:/MaximSDK/Libraries/PeriphDrivers/Include/MAX78000/mxc_device.h \
+ c:/MaximSDK/Libraries/CMSIS/Device/Maxim/MAX78000/Include/max78000.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\stdint.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\machine\_default_types.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\features.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\_newlib_version.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\_intsup.h \
+ c:\maximsdk\tools\xpack\riscv-none-embed-gcc\riscv-none-embed\include\sys\_stdint.h \
+ c:/MaximSDK/Libraries/CMSIS/Include/core_rv32.h \
+ c:/MaximSDK/Libraries/CMSIS/Device/Maxim/MAX78000/Include/system_max78000.h \
+ c:/MaximSDK/Libraries/PeriphDrivers/Include/MAX78000/mxc_errors.h \
+ c:/MaximSDK/Libraries/PeriphDrivers/Include/MAX78000/mxc_pins.h \
+ c:/MaximSDK/Libraries/PeriphDrivers/Include/MAX78000/gpio.h \
+ c:/MaximSDK/Libraries/CMSIS/Device/Maxim/MAX78000/Include/gpio_regs.h \
+ c:/MaximSDK/Libraries/PeriphDrivers/Include/MAX78000/mxc_assert.h \
+ c:\maximsdk\libraries\boards\max78000\include\pb.h \
+ c:/MaximSDK/Libraries/PeriphDrivers/Include/MAX78000/gpio.h

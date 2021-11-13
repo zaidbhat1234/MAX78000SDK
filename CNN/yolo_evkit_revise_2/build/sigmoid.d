@@ -1,5 +1,5 @@
 c:/MaximSDK/Examples/MAX78000/CNN/yolo_evkit_revise_2/build/sigmoid.o: \
- src/sigmoid.c ../../../../Libraries/PeriphDrivers/Include/MAX78000/mxc.h \
+ sigmoid.c ../../../../Libraries/PeriphDrivers/Include/MAX78000/mxc.h \
  ../../../../Libraries/PeriphDrivers/Include/MAX78000/mxc_device.h \
  ../../../../Libraries/CMSIS/Device/Maxim/MAX78000/Include/max78000.h \
  c:\maximsdk\tools\gnutools\lib\gcc\arm-none-eabi\9.2.1\include\stdint.h \
@@ -103,6 +103,6 @@ c:/MaximSDK/Examples/MAX78000/CNN/yolo_evkit_revise_2/build/sigmoid.o: \
  ../../../../Libraries/CMSIS/Device/Maxim/MAX78000/Include/wdt_regs.h \
  ../../../../Libraries/PeriphDrivers/Include/MAX78000/wut.h \
  ../../../../Libraries/CMSIS/Device/Maxim/MAX78000/Include/wut_regs.h \
- include/utils.h \
+ utils_faceid.h \
  ../../../../Libraries/PeriphDrivers/Include/MAX78000/uart.h \
- include/sigmoid_lut.h include/faceID.h
+ sigmoid_lut.h

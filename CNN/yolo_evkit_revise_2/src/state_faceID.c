@@ -209,7 +209,7 @@ static void process_img(q31_t* max_box)
 
 	// left line
 	for (int i = 0; i<THICKNESS; i++) {
-	    image = ((uint16_t*)raw) + (max_box[0] + i) * IMAGE_W + max_box[1];
+	    image = ((uint16_t*)raw) + (max_box[0] + i) * IMAGE_W + max_box[1]; //Z: IMGAE_W used is 224 do we need this or camera size?
 		for(int j=max_box[1]; j <= max_box[3]; j++) {
 			*(image++) = FRAME_COLOR; //color
 		}
@@ -261,7 +261,7 @@ static void run_cnn(int x_offset, int y_offset, q31_t* max_box)
 	uint32_t pass_time = 0;
 	uint8_t   *raw;
     q31_t ml_data[CNN_NUM_OUTPUTS];
-	const char *class_name_lookup[NUM_CLASSES] = {"Person", "Car", "Bicycle", "Chair", "Sofa"};
+	const char *class_name_lookup[NUM_CLASSES] = {"Person", "Car", "Cat", "Dog", "Airplane"} ;
 	// const char class_name_lookup[NUM_CLASSES] = {'a', 'b', 'c', 'd', 'e'};
 
 	// Get the details of the image from the camera driver.
@@ -337,8 +337,8 @@ static void run_cnn(int x_offset, int y_offset, q31_t* max_box)
 	pass_time = utils_get_time_ms();
 
 	
-	cnn_unload((uint32_t*) ml_data);
-
+	// cnn_unload((uint32_t*) ml_data);
+	cus_cnn_unload((uint32_t *) ml_data);
 	cnn_stop();
 
 	// Disable CNN clock to save power
@@ -349,10 +349,14 @@ static void run_cnn(int x_offset, int y_offset, q31_t* max_box)
 	pass_time = utils_get_time_ms();
 
 //	int pResult = calculate_minDistance((uint8_t*)(raw));
-	// cus_cnn_unload((uint32_t *) ml_data);
-    NMS_max(ml_data, CNN_NUM_OUTPUTS, max_box);
+
+
+	NMS_max1(ml_data, CNN_NUM_OUTPUTS, max_box); //Z:
+
+    // NMS_max(ml_data, CNN_NUM_OUTPUTS, max_box);
     for (int i = 0; i < MAX_BOX_SIZE; ++i) {
         printf("max_box[%d] = %d \n", i, max_box[i]);
+		//printf("time = %d %d %d \n",utils_get_time_ms() - pass_time,utils_get_time_ms() , pass_time);
     }
     int pResult = 0;
 
@@ -362,7 +366,7 @@ static void run_cnn(int x_offset, int y_offset, q31_t* max_box)
 	if ( pResult == 0 ) {
 		char name[18];
 		// snprintf(name, 9, "Class: %d", max_box[MAX_BOX_SIZE - 1]);
-        snprintf(name, 18, "Class: %s", class_name_lookup[max_box[MAX_BOX_SIZE - 1]]);
+        snprintf(name, 18, "Class: %s", class_name_lookup[max_box[MAX_BOX_SIZE -1]]);
 
 //		uint8_t *counter;
 //		uint8_t counter_len;
@@ -450,7 +454,7 @@ static void run_cnn(int x_offset, int y_offset, q31_t* max_box)
 //		}
 #endif
 	}
-}
+} //run_cnn ends here
 
 /********************************* Public Functions **************************/
 State* get_faceID_state(void)

@@ -71,6 +71,7 @@ q31_t sigmoid(q31_t in);
 
 void inline_softmax_q17p14_q15(q31_t * vec_in, const uint16_t start, const uint16_t end);
 
+void NMS_max1(q31_t * vec_in, const uint16_t dim_vec, q31_t* max_box); //Z:
 void NMS_max(q31_t * vec_in, const uint16_t dim_vec, q31_t* max_box);
 int cus_cnn_unload(uint32_t *out_buf);
 #endif // _UTILS_H_

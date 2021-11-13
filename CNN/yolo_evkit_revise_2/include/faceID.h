@@ -54,7 +54,7 @@
 #define IMAGE_H		224 // 150
 #define IMAGE_W		224 // 200
 #define FRAME_COLOR	0x535A
-
+#define IMG_SIZE 224  // need to change
 // Show Image from Camera
 #define X_START		8
 #define Y_START		30

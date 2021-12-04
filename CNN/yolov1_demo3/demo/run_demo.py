@@ -435,7 +435,8 @@ class FaceIdWindow(QtWidgets.QMainWindow):
 
         # self.subject_text.setText(str(max_box[6]))
         # self.ai85_time_text.setText('%.3f' % (1000 * ai85_time))
-        self.inf_time_label_text.setText('%.3f' % (max_box[11]/1000))
+        print("Time using max box: ", max_box[11])
+        self.inf_time_label_text.setText('%.10f' % (max_box[11])) #Z: /1000 why?
         # self.db_time_label_text.setText('%.3f' % (1000 * db_match_time))
         # self.ai85_energy_text.setText('N/A')
 

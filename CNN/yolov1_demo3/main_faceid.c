@@ -141,7 +141,7 @@ static q31_t max_box[5 + NUM_CLASSES + 2] = {0};
 
 int main(void)
 {
-
+  
   MXC_ICC_Enable(MXC_ICC0); // Enable cache
 
   // Switch to 100 MHz clock
@@ -258,7 +258,7 @@ int main(void)
         LED_On(LED1);
         LED_Off(LED2);
         cnt = 0;
-
+        
         cnn_start(); // Start CNN processing
 
         for (int j=0; j<16; j++){
@@ -267,13 +267,12 @@ int main(void)
           load_input_serial(0);
 
         }
-
+        uint32_t pass_time = utils_get_time_ms();
         cnn_wait();
         LED_Off(LED1);
+        
 
-      uint32_t pass_time = utils_get_time_ms();
-        // Enable CNN clock
-	    MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_CNN);
+      
 #ifdef PATTERN_INPUT
         /// to test against sampleoutput.h
         if (check_output() != CNN_OK) fail();
@@ -290,21 +289,23 @@ int main(void)
           fail();
           return 0;
         }
-
+        //uint32_t pass_time = utils_get_time_ms();
         cnn_wait();
       #endif
-
-        uint32_t time_taken = utils_get_time_ms() - pass_time;
+        
+        // Enable CNN clock
+        // MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_CNN);
+        // uint32_t time_taken = utils_get_time_ms() - pass_time; //Z: Changed this
         
         // cnn_unload((uint32_t *) ml_data);
         cus_cnn_unload((uint32_t *) ml_data);
 
         
 
-        NMS_max(ml_data, CNN_NUM_OUTPUTS, max_box, time_taken);
+        NMS_max(ml_data, CNN_NUM_OUTPUTS, max_box, utils_get_time_ms() - pass_time);
 
         // NMS_max(ml_data, CNN_NUM_OUTPUTS, max_box, cnn_time);
-
+        max_box[11] = utils_get_time_ms() - pass_time;
         // send embedding to host device
         // uart_write((uint8_t *)ml_data, sizeof(ml_data)); //sizeof(ml_data)
         uart_write((uint8_t *)max_box, 12 * 4); //sizeof(max_box)
